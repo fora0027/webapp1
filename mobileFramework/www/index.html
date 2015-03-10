@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Best App Ever!</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/hammer.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="wrapper">
+            <ul class="header">
+                <li class="leftButton button">
+                    <a href="#location">Location</a>
+                </li>
+                <li class="middleButton button">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="rightButton button">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <section class="active" data-role="page" id="home">
+                <h1 class="subTitle">
+                    A little info...
+                </h1>
+                <div class="mainpdiv">
+                    <p class="mainparagraph">
+            This is the best app you will ever use! <br>Believe it or not it can show you your current location!<br>It can also randomly select and show you one of your contact's info! <br>This is the best app ever!
+                    </p>
+                </div>
+                <div class="middleLeftHome middleHome">
+                    <h3 class="boxText">
+                Location Services
+                    </h3>
+                    <img class="locationImg" src="img/mapHome.png">
+                    <p class="boxText">
+                        You must give the App access to location services to work properly
+                    </p>
+                </div>
+                <div class="middleRightHome middleHome">
+                    <h3 class="boxText">
+                        Contacts
+                    </h3>
+                    <img class="locationImg" src="img/contactsHome.png">
+                    <p class="boxText">
+                        You must give the App access to your contacts to work properly
+                    </p>
+                </div>
+                <div class="homeBottom">
+                    <h3 class="boxText">
+                        Enjoy the best of the best
+                    </h3>
+                    <p class="boxText">
+                        Enjoy your life changing app. Rated #1 App by all of the employees that worked on it.
+                    </p>
+                </div>
+            
+            </section>
+            <section data-role="page" id="location"> 
+                    <h1 class="subTitle">Your Location</h1>
+                <div class="locationCanvasDiv"></div>
+                <img class="mapImg">
+            </section>
+            
+            <section data-role="page" id="contact">
+                <h3 class="subTitle">Contact Information</h3>
+                <div class="contactDiv">
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
